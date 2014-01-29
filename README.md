@@ -63,7 +63,7 @@ Examples:
 Read a variable
 ```js
   cordova.call('foo', [], function(value) {
-    console.log('We got value = ' + value);
+    console.log('We\'ve got value = ' + value);
   });
 ```
 Call a function with no returning callback
@@ -102,7 +102,7 @@ Call with callbacks in parametres and a returning callback
   }; // Update every 3 seconds
 
   cordova.call('navigator.compass.watchHeading', [onSuccess, onError, options], function(watchID) {
-    console.log('We've got a watch id: ' + watchID);
+    console.log('We\'ve got a watch id: ' + watchID);
   });
 ```
 
@@ -155,10 +155,10 @@ cordova.alert(message, alertCallback, [title], [buttonName])
 ```
 
 ##Cordova.confirm
-`cordova.confirm(message, confirmCallback, title, buttonLabels)``
+`cordova.confirm(message, confirmCallback, title, buttonLabels)`
 
 ##Cordova.prompt
-`cordova.prompt(message, promptCallback, title, buttonLabels, defaultText)``
+`cordova.prompt(message, promptCallback, title, buttonLabels, defaultText)`
 
 ##Cordova.beep
 `cordova.beep(times)`
